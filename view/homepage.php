@@ -17,58 +17,19 @@
 </head>
 <body>
 
-<!--<form method="post">-->
-<!--    <div class="form-row">-->
-<!--        <div class="form-group col-md-6">-->
-<!--            <label for="email">E-mail:</label>-->
-<!--            <input type="text" id="email" name="email" class="form-control" value=""/>-->
-<!--        </div>-->
-<!--        <div></div>-->
-<!--    </div>-->
-<!---->
-<!--    <fieldset>-->
-<!--        <legend>Address</legend>-->
-<!---->
-<!--        <div class="form-row">-->
-<!--            <div class="form-group col-md-6">-->
-<!--                <label for="city">City:</label>-->
-<!--                <input type="text" id="city" name="city" class="form-control" value=""/>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="form-group col-md-6">-->
-<!--                <label for="streetnumber">Street number:</label>-->
-<!--                <input type="text" id="streetnumber" name="streetnumber" class="form-control" value=""/>-->
-<!---->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="form-row">-->
-<!--            <div class="form-group col-md-6">-->
-<!--                <label for="city">City:</label>-->
-<!--                <input type="text" id="city" name="city" class="form-control" value=""/>-->
-<!---->
-<!--            </div>-->
-<!--            <div class="form-row">-->
-<!--                <div class="form-group col-md-6">-->
-<!--                    <label for="zipcode">Zipcode</label>-->
-<!--                    <input type="text" id="zipcode" name="zipcode" class="form-control" value=""/>-->
-<!---->
-<!---->
-<!--                </div>-->
-<!---->
-<!--    </fieldset>-->
-<!--</form>-->
-
 <table width="400" border="0" align="center" cellpadding="3" cellspacing="0">
     <tr>
         <td><strong>GuestBoooooooooooooooooooooook</strong></td>
     </tr>
+    <tr>
+        <td><strong> <?php  echo date("d/m/y"); ?> </strong></td>
+    </tr>
 </table>
 <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
     <tr>
-        <form id="form1" name="form1" method="post" action="addguestbook.php">
+        <form method="post">
             <td>
+
                 <table width="400" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
                     <tr>
                         <td width="117">Name</td>
@@ -88,7 +49,7 @@
                     <tr>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="Submit" value="Submit" /> <input type="reset" name="Submit2" value="Reset" /></td>
+                        <td><button type="submit" name="submit" class="btn btn-outline-dark w-50">submit</button> </td>
                     </tr>
                 </table>
             </td>
