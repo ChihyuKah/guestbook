@@ -21,9 +21,6 @@
     <tr>
         <td><strong>GuestBoooooooooooooooooooooook</strong></td>
     </tr>
-    <tr>
-        <td><strong> <?php  echo date("d/m/y"); ?> </strong></td>
-    </tr>
 </table>
 <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
     <tr>
@@ -39,7 +36,7 @@
                     <tr>
                         <td>Title</td>
                         <td>:</td>
-                        <td><input name="email" type="text" id="email" size="40" /></td>
+                        <td><input name="title" type="text" id="title" size="40" /></td>
                     </tr>
                     <tr>
                         <td valign="top">Content</td>

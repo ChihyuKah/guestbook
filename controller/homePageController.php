@@ -19,12 +19,18 @@ class homePageController
     {
         $name = ($_POST["name"]);
         $date = date("d m y");
-        $email = ($_POST["email"]);
+        $title = ($_POST["title"]);
         $comment = ($_POST["comment"]);
 
-        $dataObject = new post($name, $date, $email,$comment);
+        $dataObject = new post($name, $date, $title,$comment);
 
         var_dump($dataObject);
+
+        $jsonEncoded = json_encode($dataObject->getDataObject());
+
+        file_put_contents('database/user.json',$jsonEncoded);
+        echo $jsonEncoded;
     }
+
 
 }
